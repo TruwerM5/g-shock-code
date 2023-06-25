@@ -1,0 +1,29 @@
+
+@import './assets/sass/_fonts'
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@layer components
+    .primary-btn
+        @apply relative text-center grid place-items-center text-white text-base leading-[12px] h-[50px] w-[208px] font-bold
+        border: 2px solid black
+        transition: color .3s, background-color .3s
+
+    .primary-btn_black
+        @apply bg-black bg-black hover:text-black hover:bg-white 
+    .primary-btn_white
+        @apply text-black bg-white hover:text-white hover:bg-black hover:border-2 hover:border-white hover:border-solid
+        
+    section
+        @apply my-[40px] md:my-[60px] 2xl:my-[80px]
+    .heading
+        @apply font-orbitron font-medium text-lg leading-[25px] 2xl:text-[42px] uppercase
+    .font-orbitron
+        @apply tracking-[3px]
+    .text
+        @apply text-grey leading-[24px]
+    .text_light
+        @apply text-[#DEDEDE]
+    section
+        @apply my-[60px] lg:my-[110px]
